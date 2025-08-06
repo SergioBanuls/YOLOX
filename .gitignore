@@ -1,17 +1,28 @@
-# Dataset files - ignore all images, annotations and dataset splits
+# Dataset files - ignore all images, annotations and dataset splits but keep folder structure
 datasets/**/*.jpg
 datasets/**/*.jpeg
 datasets/**/*.png
 datasets/**/*.xml
 datasets/**/*.txt
+# Keep the directory structure
+!datasets/
+!datasets/VOCdevkit/
+!datasets/VOCdevkit/VOC2020/
+!datasets/VOCdevkit/VOC2020/Annotations/
+!datasets/VOCdevkit/VOC2020/JPEGImages/
+!datasets/VOCdevkit/VOC2020/ImageSets/
+!datasets/VOCdevkit/VOC2020/ImageSets/Main/
 
-# YOLOX training outputs - ignore all subdirectories and their contents
-YOLOX_outputs/*/
+# YOLOX training outputs - ignore contents but keep directories
+YOLOX_outputs/**/*
+!YOLOX_outputs/
+!YOLOX_outputs/*/
 
-# Demo output images
+# Demo output images - ignore images but keep directory
 demo_output/*.jpg
 demo_output/*.jpeg
 demo_output/*.png
+!demo_output/
 
 # Test image
 prueba_doc.jpg
