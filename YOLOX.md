@@ -126,6 +126,24 @@ Script principal para **exportar el modelo entrenado al formato ONNX**. Este scr
 
 ## 📁 Preparación del Dataset
 
+### 📥 Obtención del Dataset
+
+**Dataset:** Los datos de entrenamiento utilizados en este proyecto provienen del **dataset MIDV-2020** (midv), que contiene imágenes de documentos de identidad.
+
+⚠️ **Importante:** Este repositorio **no incluye los datos de entrenamiento**. Es necesario descargar el dataset MIDV-2020 por cuenta propia desde el [enlace oficial](http://l3i-share.univ-lr.fr/MIDV2020/midv2020.html) para poder realizar el entrenamiento del modelo.
+
+#### Pasos para obtener el dataset:
+
+1. **Accede al sitio oficial:** [MIDV-2020 Dataset](http://l3i-share.univ-lr.fr/MIDV2020/midv2020.html)
+2. **Descarga el dataset** siguiendo las instrucciones del sitio
+3. **Extrae los archivos** en tu sistema local
+4. **Convierte las anotaciones** al formato VOC XML (ver sección siguiente)
+5. **Organiza los archivos** según la estructura requerida
+
+### 🔄 Conversión y preparación de datos
+
+Una vez descargado el dataset MIDV-2020, necesitarás convertir las anotaciones al formato VOC XML y organizar los archivos según la estructura requerida por YOLOX.
+
 **IMPORTANTE:** Antes de ejecutar cualquier entrenamiento, debes preparar correctamente tu dataset siguiendo estos pasos:
 
 ### 1. Estructura de directorios requerida
